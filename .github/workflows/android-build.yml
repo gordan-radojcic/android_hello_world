@@ -23,17 +23,20 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew assembleRelease
+      run: ./gradlew bundleRelease
 
     - name: Test
       run: |
         pwd
         ls -la
         cd app
+        pwd
         ls -la
-        cd release
-        ls -la
-        cd release
+        cd outputs
+        pwd
+        ls -ls
+        cd bundle
+        pwd
         ls -la
         
     - name: Distribute to AppCenter
