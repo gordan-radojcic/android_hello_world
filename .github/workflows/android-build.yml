@@ -27,7 +27,7 @@ jobs:
 
     - name: Test
       run: |
-        cd build
+        cd build/intermediates
         ls -la
         
     - name: Distribute to AppCenter
