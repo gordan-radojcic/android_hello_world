@@ -25,12 +25,11 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: PWD
-      run: PWD
-      
-    - name: LS
-      run: ls -la
-      
+    - name: Test
+      run: |
+        pwd
+        ls -la
+        
     - name: Distribute to AppCenter
       uses: akinncar/appcenter-distribute-action@master
       with:
