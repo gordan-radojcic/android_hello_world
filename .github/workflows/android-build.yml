@@ -29,15 +29,7 @@ jobs:
       run: |
         pwd
         ls -la
-        cd app
-        pwd
-        ls -la
-        cd outputs
-        pwd
-        ls -ls
-        cd bundle
-        pwd
-        ls -la
+        find . -type f -name "*.aab"
         
     - name: Distribute to AppCenter
       uses: akinncar/appcenter-distribute-action@master
