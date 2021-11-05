@@ -29,6 +29,8 @@ jobs:
       run: |
         pwd
         ls -la
+        cd app
+        ls -la
         cd release
         ls -la
         cd release
