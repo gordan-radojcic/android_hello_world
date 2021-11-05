@@ -27,7 +27,7 @@ jobs:
 
     - name: Test
       run: |
-        pwd
+        cd build
         ls -la
         
     - name: Distribute to AppCenter
