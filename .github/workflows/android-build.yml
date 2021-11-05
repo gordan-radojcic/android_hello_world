@@ -24,3 +24,10 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+      
+    - name: Distribute to AppCenter
+      uses: akinncar/appcenter-distribute-action@master
+      with:
+        args: stores publish  --file /path/to/file.aab --store Production --app gordan-r/Android-Hello-World-Test --release-notes "Some note."
+      env:
+        APPCENTER_ACCESS_TOKEN: ${{ secrets.APPCENTER_ACCESS_TOKEN }}
