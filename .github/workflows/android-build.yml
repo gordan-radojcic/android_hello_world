@@ -23,7 +23,12 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew bundleRelease
+      run: ./gradlew build
+      
+    - name: test2
+      run: |
+        pwd
+        find . -type f -name "*.aab"
         
     - name: Distribute to AppCenter
       uses: akinncar/appcenter-distribute-action@master
