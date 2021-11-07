@@ -1,4 +1,4 @@
-package codepath.demos.helloworlddemo;
+package appcenter.demos.helloworlddemo;
 
 import android.os.Bundle;
 import android.app.Activity;
